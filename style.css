@@ -372,10 +372,8 @@
 
 .box-signin {
     border: 1px solid lightgray;
-    /* margin: 10px; */
     width: 100vw;
     margin-top: 20px;
-    /* height: 20vh; */
     padding: 20px;
     border-radius: 6px;
 }
@@ -392,44 +390,41 @@
 }
 
 /**footer**/
-footer {
-    margin-top: 15px;
-}
+
 
 .foot-panel1 {
     background-color: #37475a;
     color: white;
-    height: 50px;
+    height: 49px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.foot-panel1:hover {
+    background-color: #374753ee;
 }
 
 .foot-panel2 {
     background-color: #222f3d;
     color: white;
-    height: 500px;
-    /* width: 100%; */
+    height: 400px;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
 }
 
-.footer-content1 {
-    display: block;
-    /* margin-left: 1px; */
-    /* background-color: aqua; */
-    /* flex-wrap: wrap; */
-    width: 25%;
-    /* align-items: center; */
-    justify-content: space-evenly;
-    text-align: center;
-
+.foot-panel2 p {
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 8px;
 }
 
-ul {
-    margin-top: 50px;
+.foot-panel2 li {
+    list-style: none;
 }
 
 ul a {
@@ -437,7 +432,7 @@ ul a {
     display: block;
     text-decoration: none;
     font-size: 0.85rem;
-    line-height: 40px;
+    line-height: 30px;
 }
 
 ul a:hover {
@@ -447,7 +442,7 @@ ul a:hover {
 .foot-panel3 {
     background-color: #222f3d;
     color: white;
-    border-top: 0.5px solid white;
+    border-top: 0.5px solid #374753ee;
     height: 70px;
     display: flex;
     justify-content: center;
@@ -459,13 +454,15 @@ ul a:hover {
     background-size: cover;
     height: 60px;
     width: 100px;
+    cursor: pointer;
 }
 
 .foot-panel4 {
-    background-color: #0F1111;
+    background-color: #131A22;
     color: white;
     text-align: center;
     height: 80px;
+    width: 100%;
     font-size: 0.7rem;
 
 }
@@ -477,9 +474,15 @@ ul a:hover {
 .pages a {
     text-decoration: none;
     color: white;
+    font-size: 0.75rem;
+    padding: 5px;
+}
+
+.pages a:hover {
+    text-decoration: underline;
 }
 
 .copyright {
     padding-top: 5px;
-
+    font-size: 0.75rem;
 }
