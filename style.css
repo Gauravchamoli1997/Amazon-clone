@@ -14,13 +14,14 @@
     background-color: #0F1111;
     color: white;
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: space-evenly;
 }
 
 .nav-logo {
     height: 50px;
-    width: 100px;
+    width: 105px;
 }
 
 .logo {
@@ -28,18 +29,32 @@
     background-size: cover;
     height: 60px;
     width: 100%;
+    cursor: pointer;
 }
 
 .border {
     border: 1px solid transparent;
     cursor: pointer;
+    text-decoration: none;
+    color: white;
 }
 
 .border:hover {
-    border: 1px solid white
+    border: 1px solid white;
+    border-radius: 3px;
 }
 
 /** box2 **/
+
+.nav-address{
+    margin-left: 5px;
+    margin-right:15px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+    width: 80px;
+}
+
 .add-first {
     color: #cccccc;
     font-size: 0.85rem;
@@ -48,7 +63,7 @@
 
 .add-second {
     font-size: 1rem;
-    margin-left: 3px;
+    margin-left: 5px;
 }
 
 .add-icon {
@@ -63,7 +78,6 @@
     width: 700px;
     height: 40px;
     border-radius: 4px;
-
 }
 
 .search-select {
@@ -75,8 +89,8 @@
     border: none;
     overflow: hidden;
     box-sizing: border-box;
-
-
+    outline: none;
+    cursor: pointer;
 }
 
 .nav-search:hover {
@@ -91,6 +105,7 @@
     border: none;
     flex: 1;
     padding: 0 10px;
+    outline: none;
 }
 
 .search-icon {
@@ -103,24 +118,73 @@
     background-color: rgb(255, 174, 0);
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
+    cursor: pointer;
 }
 
 /**box4**/
+
+.flag{
+    width:21.6px;
+    height:16.2px;
+    cursor: pointer;
+}
+.language{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    height:50px;
+    padding-left:5px;
+    padding-right:5px;
+}
+
+.language-option{
+    background-color: #0F1111;
+    color:white;
+    border:transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+/**box5**/
+
+.nav-signin{
+    width:140px;
+    height:50px;
+}
+
 .nav-first {
     font-size: 0.75rem;
+    padding-left: 5px;
+    padding-top: 10px;
 }
 
 .nav-second {
     font-size: 0.85rem;
     font-weight: 700;
+    background-color: #0F1111;
+    border: hidden;
+    color: white;
+    outline: none;
 }
 
-/**box4**/
+/**box6**/
+
+.nav-return{
+    height:50px;
+    width:60px;
+}
+
+/**box7**/
 .nav-cart i {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .nav-cart {
+    height:50px;
+    width:75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 0.85rem;
     font-weight: 700;
 }
@@ -132,27 +196,41 @@
     background-color: #222f3d;
     color: white;
     align-items: center;
-    justify-content: space-evenly;
-    position: relative;
 }
 
 .panel-all {
-    width: 10%;
+    width: 4%;
+    margin-left: 15px;
+    padding: 11px 10px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .panel-options {
     display: flex;
-    /* margin-left: 15px; */
     width: 70%;
     font-size: 0.85rem;
-    justify-content: space-evenly;
+}
+
+.panel-options a{
+    color:white;
+    text-decoration: none;
+    font-size: 14px;
+    padding-left:5px;
+    padding-right:5px;
+    font-weight:500;
+    padding-top:10px;
+    padding-bottom: 11px;
 }
 
 .panel-deals {
     font-size: 0.9rem;
     font-weight: 700;
-    width: 20%;
-    text-align: left;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    padding-top: 10px;
+    padding-bottom: 11px;
 }
 
 /**hero section**/
@@ -175,7 +253,7 @@
     align-items: center;
     justify-content: center;
     font-size: 0.85rem;
-    width: 90%;
+    width: 97%;
     margin-bottom: 15px;
 
 }
